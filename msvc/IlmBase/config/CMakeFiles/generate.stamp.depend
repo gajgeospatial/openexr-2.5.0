@@ -1,0 +1,14 @@
+# CMake generation dependency list for this directory.
+C:/Development/op3d_active/openexr-2.5.0/IlmBase/config/CMakeLists.txt
+C:/Development/op3d_active/openexr-2.5.0/IlmBase/config/IlmBaseConfig.cmake.in
+C:/Development/op3d_active/openexr-2.5.0/IlmBase/config/IlmBaseConfig.h.in_cmake
+C:/Development/op3d_active/openexr-2.5.0/IlmBase/config/IlmBaseConfigInternal.h.in_cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckStructHasMember.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/WriteBasicConfigVersionFile.cmake

@@ -1,0 +1,17 @@
+# CMake generation dependency list for this directory.
+C:/Development/op3d_active/openexr-2.5.0/OpenEXR/CMakeLists.txt
+C:/Development/op3d_active/openexr-2.5.0/OpenEXR/config/LibraryDefine.cmake
+C:/Development/op3d_active/openexr-2.5.0/OpenEXR/config/OpenEXRSetup.cmake
+C:/Development/op3d_active/openexr-2.5.0/OpenEXR/config/ParseConfigure.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CTest.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CTestTargets.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CTestUseLaunchers.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/DartConfiguration.tcl.in
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/GNUInstallDirs.cmake

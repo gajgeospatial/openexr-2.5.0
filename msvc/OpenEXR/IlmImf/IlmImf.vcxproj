@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|Win32">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Debug|x64">
+      <Configuration>vs2017_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|Win32">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2017_Release|x64">
+      <Configuration>vs2017_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A9FCEC32-A52C-3316-9455-266888D58547}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>IlmImf</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">IlmImf-2_5_d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">IlmImf-2_5_d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">IlmImf-2_5_d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">IlmImf-2_5_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">IlmImf-2_5</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">IlmImf-2_5</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">IlmImf-2_5</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">IlmImf-2_5</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR="Debug";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR=\"Debug\";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath.lib;IlmThread.lib;zlib.lib;Half.lib;IexMath.lib;Iex.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)IlmImf.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR="Debug";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR=\"Debug\";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath.lib;IlmThread.lib;zlib.lib;Half.lib;IexMath.lib;Iex.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)IlmImf.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR="Debug";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR=\"Debug\";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath.lib;IlmThread.lib;zlib.lib;Half.lib;IexMath.lib;Iex.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)IlmImf.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR="Debug";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR=\"Debug\";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath.lib;IlmThread.lib;zlib.lib;Half.lib;IexMath.lib;Iex.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)IlmImf.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR="Release";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR=\"Release\";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath.lib;IlmThread.lib;zlib.lib;Half.lib;IexMath.lib;Iex.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)IlmImf.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR="Release";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR=\"Release\";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath.lib;IlmThread.lib;zlib.lib;Half.lib;IexMath.lib;Iex.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)IlmImf.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR="Release";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR=\"Release\";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath.lib;IlmThread.lib;zlib.lib;Half.lib;IexMath.lib;Iex.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)IlmImf.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='vs2017_Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;..\..\..\..\$(ZLIB_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR="Release";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;ILMIMF_EXPORTS;OPENEXR_DLL;CMAKE_INTDIR=\"Release\";IlmImf_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>.\;..\..\..\OpenEXR\IlmImf;..\config;..\..\..\IlmBase\Iex;..\..\IlmBase\config;..\..\..\IlmBase\Half;..\..\..\IlmBase\Imath;..\..\..\IlmBase\IexMath;..\..\..\IlmBase\IlmThread;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Imath.lib;IlmThread.lib;zlib.lib;Half.lib;IexMath.lib;Iex.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\$(ZLIB_DIR)\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) </AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)IlmImf.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfForward.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfExport.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfBoxAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfCRgbaFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfChannelList.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfChannelListAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfCompressionAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfDoubleAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfFloatAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfFrameBuffer.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfHeader.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfIO.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfInputFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfIntAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfLineOrderAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfMatrixAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfOpaqueAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfOutputFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfRgbaFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfStringAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfVecAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfHuf.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfWav.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfLut.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfArray.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfCompression.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfLineOrder.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfName.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfPixelType.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfVersion.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfXdr.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfConvert.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfPreviewImage.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfPreviewImageAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfChromaticities.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfChromaticitiesAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfKeyCode.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfKeyCodeAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfTimeCode.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfTimeCodeAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfRational.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfRationalAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfFramesPerSecond.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfStandardAttributes.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfStdIO.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfEnvmap.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfEnvmapAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfInt64.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfRgba.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfTileDescription.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfTileDescriptionAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfTiledInputFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfTiledOutputFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfTiledRgbaFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfRgbaYca.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfTestFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfThreading.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfB44Compressor.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfStringVectorAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfMultiView.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfAcesFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfMultiPartOutputFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfGenericOutputFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfMultiPartInputFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfGenericInputFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfPartType.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfPartHelper.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfOutputPart.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfTiledOutputPart.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfInputPart.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfTiledInputPart.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfDeepScanLineOutputFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfDeepScanLineOutputPart.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfDeepScanLineInputFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfDeepScanLineInputPart.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfDeepTiledInputFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfDeepTiledInputPart.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfDeepTiledOutputFile.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfDeepTiledOutputPart.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfDeepFrameBuffer.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfDeepCompositing.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfCompositeDeepScanLine.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfNamespace.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfDeepImageState.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfDeepImageStateAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\ImfFloatVectorAttribute.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\b44ExpLogTable.h" />
+    <ClInclude Include="..\..\..\OpenEXR\IlmImf\dwaLookups.h" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfBoxAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfCRgbaFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfChannelList.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfChannelListAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfFloatAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfFrameBuffer.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfHeader.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfIO.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfInputFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfIntAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfLineOrderAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfMatrixAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfOpaqueAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfOutputFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfRgbaFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfStringAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfVecAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfHuf.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfThreading.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfWav.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfLut.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfCompressor.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfRleCompressor.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfZipCompressor.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfPizCompressor.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfB44Compressor.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfDwaCompressor.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfMisc.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfCompressionAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfDoubleAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfConvert.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfPreviewImage.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfPreviewImageAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfVersion.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfChromaticities.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfChromaticitiesAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfKeyCode.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfKeyCodeAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfTimeCode.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfTimeCodeAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfRational.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfRationalAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfFramesPerSecond.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfStandardAttributes.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfStdIO.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfEnvmap.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfEnvmapAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfScanLineInputFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfTiledInputFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfTiledMisc.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfTiledOutputFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfTiledRgbaFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfTileDescriptionAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfTileOffsets.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfRgbaYca.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfPxr24Compressor.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfTestFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfStringVectorAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfMultiView.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfAcesFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfMultiPartOutputFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfGenericOutputFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfOutputPartData.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfMultiPartInputFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfGenericInputFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfPartType.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfInputPartData.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfOutputPart.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfTiledOutputPart.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfInputPart.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfTiledInputPart.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfDeepScanLineInputPart.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfDeepScanLineOutputPart.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfDeepScanLineInputFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfDeepScanLineOutputFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfDeepTiledInputPart.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfDeepTiledOutputPart.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfDeepTiledInputFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfDeepTiledOutputFile.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfDeepFrameBuffer.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfDeepCompositing.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfCompositeDeepScanLine.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfDeepImageStateAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfFastHuf.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfFloatVectorAttribute.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfRle.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfSystemSpecific.cpp" />
+    <ClCompile Include="..\..\..\OpenEXR\IlmImf\ImfZip.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

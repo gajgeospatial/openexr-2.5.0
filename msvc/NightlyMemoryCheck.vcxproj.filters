@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\op3d_active\openexr-2.5.0\msvc\CMakeFiles\376198951193dcaa73a0aa39ff596861\NightlyMemoryCheck.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Development\op3d_active\openexr-2.5.0\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Development\op3d_active\openexr-2.5.0\msvc\CMakeFiles\NightlyMemoryCheck" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{017D4BE9-CB3A-3BF6-9B56-5B0124CB0CFB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

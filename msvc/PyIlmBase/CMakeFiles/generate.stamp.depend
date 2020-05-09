@@ -1,0 +1,13 @@
+# CMake generation dependency list for this directory.
+C:/Development/op3d_active/openexr-2.5.0/PyIlmBase/CMakeLists.txt
+C:/Development/op3d_active/openexr-2.5.0/PyIlmBase/config/ParseConfigure.cmake
+C:/Development/op3d_active/openexr-2.5.0/PyIlmBase/config/PyIlmBaseSetup.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindBoost.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPython.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPython/Support.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPython2.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindPython3.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/SelectLibraryConfigurations.cmake
